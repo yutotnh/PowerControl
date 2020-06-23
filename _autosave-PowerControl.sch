@@ -185,17 +185,6 @@ Wire Wire Line
 	8150 3900 8050 3900
 Wire Wire Line
 	8050 3900 8050 3950
-$Comp
-L power:VCC #PWR09
-U 1 1 5EF2872A
-P 6400 4950
-F 0 "#PWR09" H 6400 4800 50  0001 C CNN
-F 1 "VCC" H 6415 5123 50  0000 C CNN
-F 2 "" H 6400 4950 50  0001 C CNN
-F 3 "" H 6400 4950 50  0001 C CNN
-	1    6400 4950
-	1    0    0    -1  
-$EndComp
 Text GLabel 8150 3800 0    50   Input ~ 0
 OutPut
 Text GLabel 7400 5950 2    50   Output ~ 0
@@ -233,8 +222,6 @@ Wire Wire Line
 	6050 5050 6400 5050
 Wire Wire Line
 	6400 5050 6400 5200
-Wire Wire Line
-	6400 4950 6400 5050
 Connection ~ 6400 5050
 $Comp
 L Device:R R1
@@ -553,4 +540,17 @@ Wire Wire Line
 Connection ~ 5250 5400
 Wire Wire Line
 	5250 5400 5700 5400
+Wire Wire Line
+	6400 4950 6400 5050
+$Comp
+L power:VCC #PWR09
+U 1 1 5EF2872A
+P 6400 4950
+F 0 "#PWR09" H 6400 4800 50  0001 C CNN
+F 1 "VCC" H 6415 5123 50  0000 C CNN
+F 2 "" H 6400 4950 50  0001 C CNN
+F 3 "" H 6400 4950 50  0001 C CNN
+	1    6400 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
