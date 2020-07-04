@@ -185,17 +185,6 @@ Wire Wire Line
 	8150 3900 8050 3900
 Wire Wire Line
 	8050 3900 8050 3950
-$Comp
-L power:VCC #PWR09
-U 1 1 5EF2872A
-P 6400 4950
-F 0 "#PWR09" H 6400 4800 50  0001 C CNN
-F 1 "VCC" H 6415 5123 50  0000 C CNN
-F 2 "" H 6400 4950 50  0001 C CNN
-F 3 "" H 6400 4950 50  0001 C CNN
-	1    6400 4950
-	1    0    0    -1  
-$EndComp
 Text GLabel 8150 3800 0    50   Input ~ 0
 OutPut
 Text GLabel 7400 5950 2    50   Output ~ 0
@@ -233,8 +222,6 @@ Wire Wire Line
 	6050 5050 6400 5050
 Wire Wire Line
 	6400 5050 6400 5200
-Wire Wire Line
-	6400 4950 6400 5050
 Connection ~ 6400 5050
 $Comp
 L Device:R R1
@@ -427,7 +414,7 @@ U 1 1 5EF5DFD2
 P 1750 3450
 F 0 "C1" H 1868 3496 50  0000 L CNN
 F 1 "1000u" H 1868 3405 50  0000 L CNN
-F 2 "" H 1788 3300 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 1788 3300 50  0001 C CNN
 F 3 "~" H 1750 3450 50  0001 C CNN
 	1    1750 3450
 	1    0    0    -1  
@@ -553,4 +540,61 @@ Wire Wire Line
 Connection ~ 5250 5400
 Wire Wire Line
 	5250 5400 5700 5400
+Wire Wire Line
+	6400 4950 6400 5050
+$Comp
+L power:VCC #PWR09
+U 1 1 5EF2872A
+P 6400 4950
+F 0 "#PWR09" H 6400 4800 50  0001 C CNN
+F 1 "VCC" H 6415 5123 50  0000 C CNN
+F 2 "" H 6400 4950 50  0001 C CNN
+F 3 "" H 6400 4950 50  0001 C CNN
+	1    6400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EF2F027
+P 5550 3450
+F 0 "H1" H 5650 3496 50  0000 L CNN
+F 1 "MountingHole" H 5650 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 3450 50  0001 C CNN
+F 3 "~" H 5550 3450 50  0001 C CNN
+	1    5550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EF2FEEF
+P 6250 3450
+F 0 "H3" H 6350 3496 50  0000 L CNN
+F 1 "MountingHole" H 6350 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 3450 50  0001 C CNN
+F 3 "~" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EF30E40
+P 5550 3650
+F 0 "H2" H 5650 3696 50  0000 L CNN
+F 1 "MountingHole" H 5650 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 3650 50  0001 C CNN
+F 3 "~" H 5550 3650 50  0001 C CNN
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EF31C67
+P 6250 3650
+F 0 "H4" H 6350 3696 50  0000 L CNN
+F 1 "MountingHole" H 6350 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 3650 50  0001 C CNN
+F 3 "~" H 6250 3650 50  0001 C CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
