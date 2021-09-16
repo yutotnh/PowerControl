@@ -79,45 +79,6 @@ F 3 "" H 4500 3400 50  0001 C CNN
 	1    4500 3400
 	1    0    0    -1  
 $EndComp
-Text Label 2500 5200 0    50   ~ 0
-Signal
-Wire Wire Line
-	2500 5300 2500 5200
-Wire Wire Line
-	2650 5400 2500 5400
-$Comp
-L power:GND #PWR03
-U 1 1 5EF1071A
-P 2650 5400
-F 0 "#PWR03" H 2650 5150 50  0001 C CNN
-F 1 "GND" H 2655 5227 50  0000 C CNN
-F 2 "" H 2650 5400 50  0001 C CNN
-F 3 "" H 2650 5400 50  0001 C CNN
-	1    2650 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5EF109E6
-P 2300 5400
-F 0 "J1" H 2379 5300 50  0000 L CNN
-F 1 "Conn_01x02" H 2379 5391 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2300 5400 50  0001 C CNN
-F 3 "~" H 2300 5400 50  0001 C CNN
-	1    2300 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Isolator:PC817 U1
-U 1 1 5EF0F04E
-P 3400 5300
-F 0 "U1" H 3400 5625 50  0000 C CNN
-F 1 "TLP621" H 3400 5534 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 3200 5100 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3400 5300 50  0001 L CNN
-	1    3400 5300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R2
 U 1 1 5EF204F1
@@ -224,70 +185,6 @@ Wire Wire Line
 	6400 5050 6400 5200
 Connection ~ 6400 5050
 $Comp
-L Device:R R1
-U 1 1 5EF32C60
-P 2950 5200
-F 0 "R1" V 3050 5200 50  0000 C CNN
-F 1 "200" V 3150 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 5200 50  0001 C CNN
-F 3 "~" H 2950 5200 50  0001 C CNN
-	1    2950 5200
-	0    1    1    0   
-$EndComp
-Connection ~ 2650 5400
-Wire Wire Line
-	2650 5400 3100 5400
-Wire Wire Line
-	2500 5200 2800 5200
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5EF40D5E
-P 4450 5600
-F 0 "J2" V 4322 5413 50  0000 R CNN
-F 1 "Emergency_stop_switch" V 4413 5413 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 5600 50  0001 C CNN
-F 3 "~" H 4450 5600 50  0001 C CNN
-	1    4450 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5EF41305
-P 5150 5600
-F 0 "J3" V 5022 5680 50  0000 L CNN
-F 1 "Emergency_stop_switch" V 5113 5680 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 5600 50  0001 C CNN
-F 3 "~" H 5150 5600 50  0001 C CNN
-	1    5150 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3250 4250 3250 4350
-$Comp
-L power:VCC #PWR04
-U 1 1 5EF16864
-P 3250 4250
-F 0 "#PWR04" H 3250 4100 50  0001 C CNN
-F 1 "VCC" H 3265 4423 50  0000 C CNN
-F 2 "" H 3250 4250 50  0001 C CNN
-F 3 "" H 3250 4250 50  0001 C CNN
-	1    3250 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM3480-12 U2
-U 1 1 5EF1540F
-P 3700 4350
-F 0 "U2" H 3700 4592 50  0000 C CNN
-F 1 "TLV76012DBZR" H 3700 4501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3725 4200 50  0001 L CIN
-F 3 "" H 3700 4300 50  0001 C CNN
-	1    3700 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 4350 4250 5100
-$Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5EF2467C
 P 7450 3900
@@ -298,21 +195,6 @@ F 3 "~" H 7450 3900 50  0001 C CNN
 	1    7450 3900
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4000 4350 4050 4350
-$Comp
-L power:GNDPWR #PWR06
-U 1 1 5EF1CE2F
-P 3700 4650
-F 0 "#PWR06" H 3700 4450 50  0001 C CNN
-F 1 "GNDPWR" H 3704 4496 50  0000 C CNN
-F 2 "" H 3700 4600 50  0001 C CNN
-F 3 "" H 3700 4600 50  0001 C CNN
-	1    3700 4650
-	1    0    0    -1  
-$EndComp
-Text Label 4000 4350 0    50   ~ 0
-12V
 $Comp
 L Device:Q_PMOS_GDS Q2
 U 1 1 5EF2BF51
@@ -371,43 +253,6 @@ F 3 "~" H 6900 5650 50  0001 C CNN
 	1    6900 5650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C C5
-U 1 1 5EF510BF
-P 4050 4500
-F 0 "C5" H 4165 4546 50  0000 L CNN
-F 1 "0.1u" H 4165 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4350 50  0001 C CNN
-F 3 "~" H 4050 4500 50  0001 C CNN
-	1    4050 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5EF519D9
-P 3350 4500
-F 0 "C4" H 3235 4546 50  0000 R CNN
-F 1 "0.1u" H 3235 4455 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3388 4350 50  0001 C CNN
-F 3 "~" H 3350 4500 50  0001 C CNN
-	1    3350 4500
-	1    0    0    -1  
-$EndComp
-Connection ~ 4050 4350
-Wire Wire Line
-	3700 5200 3900 5200
-Wire Wire Line
-	3250 4350 3350 4350
-Connection ~ 3350 4350
-Wire Wire Line
-	3350 4350 3400 4350
-Wire Wire Line
-	4050 4650 3700 4650
-Connection ~ 3700 4650
-Wire Wire Line
-	3700 4650 3350 4650
-Wire Wire Line
-	4050 4350 4250 4350
 $Comp
 L Device:CP C1
 U 1 1 5EF5DFD2
@@ -474,72 +319,17 @@ F 3 "" H 2200 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 5100 3900 5200
-Connection ~ 4100 5100
-Wire Wire Line
-	4100 5100 3900 5100
-Wire Wire Line
-	4100 5100 4250 5100
-Wire Wire Line
-	3700 5400 4100 5400
-Connection ~ 4100 5400
-Wire Wire Line
-	4100 5400 4350 5400
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5EF13331
-P 5100 4950
-F 0 "JP3" H 5100 5155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5100 5064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5100 4950 50  0001 C CNN
-F 3 "~" H 5100 4950 50  0001 C CNN
-	1    5100 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5EF3F971
-P 4500 5100
-F 0 "JP2" H 4500 5305 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4500 5214 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4500 5100 50  0001 C CNN
-F 3 "~" H 4500 5100 50  0001 C CNN
-	1    4500 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5EF1E5F2
-P 4100 5250
-F 0 "JP1" V 4054 5318 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 4145 5318 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4100 5250 50  0001 C CNN
-F 3 "~" H 4100 5250 50  0001 C CNN
-	1    4100 5250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 5400 5250 5400
-Wire Wire Line
-	4450 5400 4650 5400
-Wire Wire Line
-	4350 5100 4350 5400
-Connection ~ 4350 5400
-Wire Wire Line
-	4650 5100 4650 5400
-Connection ~ 4650 5400
-Wire Wire Line
-	4650 5400 4950 5400
-Wire Wire Line
-	4950 4950 4950 5400
-Connection ~ 4950 5400
-Wire Wire Line
-	4950 5400 5050 5400
+	5450 5400 5550 5400
 Wire Wire Line
 	5250 4950 5250 5400
 Connection ~ 5250 5400
 Wire Wire Line
-	5250 5400 5700 5400
+	5250 5400 5350 5400
+Wire Wire Line
+	5550 4950 5550 5400
+Connection ~ 5550 5400
+Wire Wire Line
+	5550 5400 5700 5400
 Wire Wire Line
 	6400 4950 6400 5050
 $Comp
@@ -595,6 +385,147 @@ F 1 "MountingHole" H 6350 3605 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6250 3650 50  0001 C CNN
 F 3 "~" H 6250 3650 50  0001 C CNN
 	1    6250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5EF41305
+P 5450 5600
+F 0 "J3" V 5575 5546 50  0000 C CNN
+F 1 "EMS_SW" V 5666 5546 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5450 5600 50  0001 C CNN
+F 3 "~" H 5450 5600 50  0001 C CNN
+	1    5450 5600
+	0    1    1    0   
+$EndComp
+Text Label 2800 5400 0    50   ~ 0
+Signal
+Wire Wire Line
+	2800 5500 2800 5400
+Wire Wire Line
+	2950 5600 2800 5600
+$Comp
+L power:GND #PWR03
+U 1 1 5EF1071A
+P 2950 5600
+F 0 "#PWR03" H 2950 5350 50  0001 C CNN
+F 1 "GND" H 2955 5427 50  0000 C CNN
+F 2 "" H 2950 5600 50  0001 C CNN
+F 3 "" H 2950 5600 50  0001 C CNN
+	1    2950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5EF109E6
+P 2600 5600
+F 0 "J1" H 2679 5500 50  0000 L CNN
+F 1 "Conn_01x02" H 2679 5591 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2600 5600 50  0001 C CNN
+F 3 "~" H 2600 5600 50  0001 C CNN
+	1    2600 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EF32C60
+P 3250 5400
+F 0 "R1" V 3043 5400 50  0000 C CNN
+F 1 "200" V 3134 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 5400 50  0001 C CNN
+F 3 "~" H 3250 5400 50  0001 C CNN
+	1    3250 5400
+	0    1    1    0   
+$EndComp
+Connection ~ 2950 5600
+Wire Wire Line
+	2950 5600 3400 5600
+Wire Wire Line
+	2800 5400 3100 5400
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5EF40D5E
+P 4750 5600
+F 0 "J2" V 4850 5500 50  0000 L CNN
+F 1 "EMS_SW" V 4950 5450 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4750 5600 50  0001 C CNN
+F 3 "~" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5EF1E5F2
+P 4300 5550
+F 0 "JP1" V 3950 5500 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4050 5200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4300 5550 50  0001 C CNN
+F 3 "~" H 4300 5550 50  0001 C CNN
+	1    4300 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 5400 4950 5400
+Wire Wire Line
+	4650 5100 4650 5400
+Connection ~ 4650 5400
+$Comp
+L Isolator:PC817 U1
+U 1 1 5EF0F04E
+P 3700 5500
+F 0 "U1" H 3700 5825 50  0000 C CNN
+F 1 "TLP621" H 3700 5734 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3500 5300 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3700 5500 50  0001 L CNN
+	1    3700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5400 4300 5400
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61447DCE
+P 4000 5700
+F 0 "#PWR?" H 4000 5500 50  0001 C CNN
+F 1 "GNDPWR" H 4004 5546 50  0000 C CNN
+F 2 "" H 4000 5650 50  0001 C CNN
+F 3 "" H 4000 5650 50  0001 C CNN
+	1    4000 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 5400
+Wire Wire Line
+	4300 5400 4650 5400
+Wire Wire Line
+	4000 5600 4000 5700
+Wire Wire Line
+	4000 5700 4300 5700
+Connection ~ 4000 5700
+Wire Wire Line
+	4950 5400 5250 5400
+Connection ~ 4950 5400
+Wire Wire Line
+	4950 5100 4950 5400
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5EF13331
+P 5400 4950
+F 0 "JP3" H 5400 5155 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5400 5064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5400 4950 50  0001 C CNN
+F 3 "~" H 5400 4950 50  0001 C CNN
+	1    5400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5EF3F971
+P 4800 5100
+F 0 "JP2" H 4800 5305 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4800 5214 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4800 5100 50  0001 C CNN
+F 3 "~" H 4800 5100 50  0001 C CNN
+	1    4800 5100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
