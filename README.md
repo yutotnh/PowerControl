@@ -1,13 +1,13 @@
 # PowerControl
 
-<img src="./images/PowerControl.png" alt="PowerControl" style="zoom:75%;" />
+![PowerControl](./images/PowerControl.png)
 
 ## 機能の説明
 本基板は、電源の制御回路です。
 
 最大3つのスイッチを用いて電源のON/OFF制御ができます。
 
-常時許容電流は70A程度です(使用する環境やMOSFETの性能によって低下します)。
+常時許容電流は70A程度です(銅箔厚:1ozの場合。使用する環境やMOSFETの性能によって低下します)。
 
 各スイッチはAND構成で接続しているため、全てのスイッチがONになったときのみ電流が流れます。
 
@@ -27,7 +27,7 @@
 
 動作チェック時など、一部のスイッチを接続しない場合は、接続しないスイッチの真下のソルダジャンパ(JP1~JP3)をショートすることで接続を省略することができます。
 
-<img src="./images/ControlPins.png" alt="ControlPins" style="zoom:45%;"/>
+![ControlPins](./images/ControlPins.png)
 
 ### スイッチの接続
 
@@ -37,7 +37,7 @@
 
 Signal側のピンにマイコンの5Vや3.3V等の出力を入力、GND側にマイコンが使用しているGNDを入力してください。
 
-<img src="./images/IC_Input.png" alt="IC Input" style="zoom:75%;"/>
+![IC Input](./images/IC_Input.png)
 
 #### EMS SW
 
@@ -51,4 +51,4 @@ LEDが点灯している場合ONの状態です。
 
 LEDを実装する場合は、入力側と出力側で異なる色のLEDにすると状態を視認しやすくなると思います。
 
-<img src="./images/LEDs.png" alt="LEDs" style="zoom:55%;"/>
+![LEDs](./images/LEDs.png)
